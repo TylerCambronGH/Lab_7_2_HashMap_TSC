@@ -31,11 +31,12 @@ public class Main {
             }
 			scanner.close();
 
-            for (String key: randomSearch)  {
-                System.out.println("\nSearching for key: " + key + "\n Hash Code: " + key.hashCode() + "\n Value: " + hashMap.get(key));
+            for (int i = 0; i < rsi; i++)  {
+                System.out.println("\nSearching for key: " + randomSearch[i] + "\n Hash Code: " + randomSearch[i].hashCode() + "\n Value: " + hashMap.get(randomSearch[i]));
             }
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}    
     }
 }
+
